@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-column gap-2 mt-2">
+                <h1>PASSWORD GENERATOR ZLKCYBER</h1>
+                <label for="passwordLenght" class="text-uppercase fw-bold">Password Lenght</label>
+                <input class="form-control form-control-lg" id="passwordLenght" type="number"/>
+                <button class="btn btn-dark text-uppercase fw-bold btn-lg mt-2" onclick="getPassword()">Generate Password</button>
+                <label for="password" class="text-uppercase fw-bold">Password</label>
+                <input class="form-control form-control-lg " id="password" type="text"/>
+                <button class="btn btn-primary text-uppercase fw-bold btn-lg mt-2" onclick="savePassword()" id="saveButton">Save Password</button>
+                
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
